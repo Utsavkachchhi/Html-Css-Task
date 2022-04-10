@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  .wrapper{
+    background: #fff;
+    /* position: fixed; */
+    width: 100%;
+  }
+
+  .wrapper nav{
+    position: relative;
+    display: flex;
+    /* max-width: calc(100% - 200px); */
+    margin-top: 40px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .content{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+
+  nav .content .links{
+    margin-left: 80px;
+    display: flex;
+  }
+
+  .content .logo a{
+    height: 71px;
+    width: 174px;
+    margin-left : 227px;
+    margin-top: 40px;
+  }
+  .content .links li{
+    list-style: none;
+    line-height: 70px;
+  }
+  .content .links li a,
+  .content .links li {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+     padding: 0px 5px;
+    border-radius: 5px;
+   }
+
+ /* img  {
+    height: 71px;
+    width: 174px;
+    margin-left : 227px;
+    margin-top: 40px;
+    
+} 
+
+ul {
+   
+    width: 652px;
+    height: 23px;
+    margin-top: 66px;
+    margin-left: 720px;
+    list-style-type: none;
+    display: flex;
+}  */
+
+ 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+
+
+
+
+.content .links li label{
+  display: none;
+}
+.content .links li a:hover,
+.content .links li label:hover{
+  background: #323c4e;
+}
+.wrapper .search-icon,
+.wrapper .menu-icon{
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 70px;
+  width: 70px;
+  text-align: center;
+}
+.wrapper .menu-icon{
+  display: none;
+}
+.wrapper #show-search:checked ~ .search-icon i::before{
+  content: "\f00d";
+}
+
+.wrapper .search-box{
+  position: absolute;
+  height: 100%;
+  max-width: calc(100% - 50px);
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.wrapper #show-search:checked ~ .search-box{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.wrapper input[type="checkbox"]{
+  display: none;
+}
+
+/* Dropdown Menu code start */
+/*  */
+ 
+
+  
+
+
+
+
