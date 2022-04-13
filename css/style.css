@@ -66,24 +66,11 @@
 
 .slideimage {
   width: 100%;
-}
-
-.slidedemo {
   position: relative;
 }
 
-/* .slidediv{
-  position: absolute;
-} */
-/*   
-.left-arrow{
-  display: inline-block;
-  vertical-align: middle;
-  width: 42px;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-radius: 5px;
-    opacity: 0.5;
-} */
+
+
 
 .myheading {
   text-align: center;
@@ -173,11 +160,11 @@ ul.a {
   /* border-radius: 15px; */
   float: left;
   margin-left: 30px;
-  background: #F4F6FC 0% 0% no-repeat padding-box;
-border-radius: 15px;
-opacity: 1;
+  background: #f4f6fc 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  opacity: 1;
+  padding-bottom: 30px;
 }
-
 
 .card-image {
   /* background: #7243EA 0% 0% no-repeat padding-box; */
@@ -186,7 +173,6 @@ opacity: 1;
   /* opacity: 0.2; */
   background-repeat: no-repeat;
   width: 100%;
-
 }
 
 .card-time {
@@ -205,45 +191,98 @@ opacity: 1;
   color: #293846;
   opacity: 1;
   margin-left: 20px;
-  margin-top: 12px;
-  padding:0px;
+  margin-top: 0px;
+  padding: 0px;
 }
 
-.card-description{
+.card-description {
   margin-top: 20px;
-    margin-left: 20px;
-    text-align: left;
+  margin-left: 20px;
+  text-align: left;
 font: normal normal normal 16px/29px Poppins;
 letter-spacing: 0px;
-line-height: 29px;
-padding-right: 19px;
 color: #676A6C;
+  height: 110px;
 }
 
-.card-span{
-  text-align: left;
-font: normal normal medium 16px/29px Poppins;
-letter-spacing: 0px;
-color: #293846;
-}
-
-.card-button {
-  margin-top: 30px;
-    margin-left: 20px;
-    border-radius: 4px;
-    width: 90%;
-    font: normal normal medium 14px/20px Poppins;
-    letter-spacing: 0.84px;
-    color: #fff;
-    opacity: 1;
-    background-color: #7243EA;
-    padding: 18px 120px;
-}
-
-.card-body span{
+.card-span {
   text-align: left;
   font: normal normal medium 16px/29px Poppins;
   letter-spacing: 0px;
   color: #293846;
 }
 
+.card-button {
+  margin-top: 50px;
+  margin-left: 20px;
+  border-radius: 4px;
+  width: 90%;
+  font: normal normal medium 14px/20px Poppins;
+  letter-spacing: 0.84px;
+  color: #fff;
+  opacity: 1;
+  background-color: #7243ea;
+  padding: 18px 120px;
+}
+
+.card-body span {
+  text-align: left;
+  font: normal normal medium 16px/29px Poppins;
+  letter-spacing: 0px;
+  color: #293846;
+}
+
+
+
+/* .prev {
+  position: absolute;
+  z-index: 1;
+  top: 299px;
+  left: 227px;
+  width: 42px;
+  height: 42px;
+  /* margin-top: -10px;
+}
+
+.next {
+  position: absolute;
+  z-index: 1;
+  top: 299px;
+  left: 1331px;
+  width: 42px;
+  height: 42px;
+} */
+.footer {
+  background: #7243ea 0% 0% no-repeat padding-box;
+  opacity: 1;
+  margin-top: 80px;
+  width: 100%;
+  float: left;
+  
+}
+
+.footerul{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ .footerul ul{ 
+ display: flex; 
+ padding: 30px;
+ list-style: none;
+ 
+ }
+
+ .footerul ul li {
+  margin: 0px 10px;
+}
+
+
+.footerul ul li a {
+  text-align: left;
+  text-decoration: none;
+  color: #F4F6FC;
+  opacity: 1;
+  font: normal normal normal 16px/25px Poppins;
+letter-spacing: 0.32px;
+} 
