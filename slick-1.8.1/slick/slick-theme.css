@@ -79,7 +79,14 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 25px;
+    /* color: white; */
+    background: wheat;
+    z-index: 1;
+    top: 299px;
+    /* left: 227px; */
+    width: 42px;
+    height: 42px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -97,7 +104,15 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 20px;
+    /* color: white; */
+    /* background: wheat; */
+    z-index: 1;
+    top: 299px;
+    /* left: 227px; */
+    width: 42px;
+    height: 42px;
+    
 }
 [dir='rtl'] .slick-next
 {

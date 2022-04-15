@@ -11,7 +11,7 @@
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #ffffff;
   opacity: 1;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .nav {
@@ -52,18 +52,7 @@
   width: 30%;
 }
 
-/* .hamburger {
-  display: none;
-  margin-left: 35px;
 
-}
-
-
-/* 
-@media only screen and (max-width: 768px) {
-
-
-} */
 
 .slideimage {
   width: 100%;
@@ -235,25 +224,6 @@ color: #676A6C;
 }
 
 
-
-/* .prev {
-  position: absolute;
-  z-index: 1;
-  top: 299px;
-  left: 227px;
-  width: 42px;
-  height: 42px;
-  /* margin-top: -10px;
-}
-
-.next {
-  position: absolute;
-  z-index: 1;
-  top: 299px;
-  left: 1331px;
-  width: 42px;
-  height: 42px;
-} */
 .footer {
   background: #7243ea 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -266,13 +236,14 @@ color: #676A6C;
 .footerul{
   display: inline-block;
   vertical-align: middle;
+  float: left;
+
 }
 
  .footerul ul{ 
  display: flex; 
  padding: 30px;
  list-style: none;
- 
  
  }
 
@@ -293,8 +264,92 @@ letter-spacing: 0.32px;
 .fa-ul{
   color: white;
   display: flex;
+  padding: 30px;
+  padding-right: 0px;
 }
 
 .footericon{
   display: inline-block;
+  float: right;
+}
+
+.fa-ul li{
+  text-align: left;
+font: normal normal normal 18px/24px Font Awesome 5 Brands;
+letter-spacing: 0.72px;
+color: #F4F6FC;
+opacity: 1;
+display: inline-block;
+    left: 0px;
+}
+
+
+
+
+        /* Responsive */
+  
+        .hamburger {
+          position: absolute;
+          height: 26px; 
+           padding: 0px;
+          width: 25px;
+          cursor: pointer;
+          z-index: 99;
+          right: 25px;
+          top: 26px;
+          box-sizing: border-box;
+          display: none;
+        }
+
+        .bar{
+          background: black;
+          display: block;
+          height: 2px;
+          margin: 5px 0;
+          display: block;
+          width: 25px;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        } 
+      
+
+
+ @media only screen and (max-width: 768px) {
+     
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .mylist {
+    /* display: none; */
+  }
+
+  .mylist ul{
+     display: block;
+     text-align: center;
+     list-style: none;
+     letter-spacing: 0.32px;
+     margin-bottom: 10px;
+  }
+
+  .mylist ul li.active{
+    border-bottom: 2px solid #7243ea;
+    opacity: 1;
+    width: max-content;
+    margin: 0px auto;
+  }
+    
+} 
+
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
