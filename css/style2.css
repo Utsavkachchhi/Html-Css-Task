@@ -73,6 +73,11 @@
   text-decoration: none;
 }
 
+.navigationheader ul li.active {
+  border-bottom: 2px solid #7243ea;
+  opacity: 1;
+}
+
 .myslider {
   margin-top: 39px;
 }
