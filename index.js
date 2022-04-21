@@ -1,15 +1,16 @@
 const hamburger = document.querySelector(".hamburger");
 
-const navmenu = document.querySelector(".nav container");
+const navmenu = document.querySelector(".container");
 
 hamburger.addEventListener("click",mobilemenu);
 
 
 function mobilemenu() {
-     hamburger.classList.toggle("active");
-     navmenu.classList.toggle("active");
      
-    //  document.getElementsByClassName('mylist').style.visibility='visible';
+      navmenu.classList.toggle("none");
+      hamburger.classList.toggle("active");
+     
+    // document.getElementsByClassName('mylist').style.visibility='visible';
 
 }
 
@@ -20,7 +21,7 @@ navlink.forEach(n => n.addEventListener("click"),closemenu);
 function closemenu() {
     hamburger.classList.remove("active");
     navmenu.classList.remove("active");
-    const button = document.getElementById('toggle');
+        const button = document.getElementById('toggle');
      button.style.display = "none";
     // document.getElementsByClassName('mylist').style.visibility='hidden';
 }
@@ -33,3 +34,6 @@ function menuButton() {
         button.style.display = "block"
     }
 }
+
+
+

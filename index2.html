@@ -25,7 +25,12 @@
           <p>EZI</p>
           <span>HIRE</span>
         </div>
-        <div class="navigationheader">
+        <div class="hamburger" onclick="menuButton()">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+      </div>
+        <div class="navigationheader" id="toggle">
           <ul>
             <li class="active"><a href="#">Why Us</a></li>
             <li><a href="#">Technologies</a></li>
@@ -35,10 +40,10 @@
             <li><a href="#">FAQs</a></li>
           </ul>
         </div>
+        
       </div>
     </div>
-
-    <div class="myslider">
+        <div class="myslider">
       <div>
         <img src="./assets/Banner.png" alt="slider banner" class="slideimage" />
       </div>
@@ -48,10 +53,10 @@
       <div>
         <img src="./assets/Banner.png" alt="slider banner" class="slideimage" />
       </div>
-    </div>
+    </div> 
 
     <div class="content-main-header">
-      <span>Hire Dedicated Web Designer</span>
+      <h2>Hire Dedicated Web Designer</h2>
     </div>
 
     <div class="container">
@@ -209,6 +214,8 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
     <script type="text/javascript" src="./jquery/jquery-3.6.0.min.js"></script>
 
     <script type="text/javascript" src="./slick-1.8.1/slick/slick.js"></script>

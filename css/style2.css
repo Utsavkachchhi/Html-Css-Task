@@ -63,8 +63,20 @@
 
 .navigationheader ul li {
   display: inline-block;
+  position: relative;
 }
-
+.navigationheader ul li:hover a::after,
+.navigationheader ul li.active a::after{  
+position: absolute;
+height: 3px;
+content: "";
+width: 28px;
+border-radius: 4px;
+left: 50%;
+margin-left: -14px;
+background-color: #7243EA;
+bottom: 0;
+}
 .navigationheader ul li a {
   padding: 0px 10px;
   color: #293846;
@@ -73,10 +85,6 @@
   text-decoration: none;
 }
 
-.navigationheader ul li.active {
-  border-bottom: 2px solid #7243ea;
-  opacity: 1;
-}
 
 .myslider {
   margin-top: 39px;
@@ -86,18 +94,33 @@
   width: 100%;
   position: relative;
 }
-
+.slick-prev i, 
+.slick-next i{
+  font-size: 30px;
+  display: block;
+  opacity: 1;
+}
 .slick-prev,
 .slick-next {
   z-index: 999;
+  border-radius: 4px;
   position: absolute;
   top: 50%;
+  height: 40px;
+  width: 40px;
+  opacity: 0.5;
+  font-size: 40px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
 
-.slick-next {
-  right: 0px;
+.slick-next{
+  right: 50px;
 }
-
+.slick-prev{
+  left: 50px;
+}
 /* .fa {
   border: 3px solid #ffffff;
   opacity: 1;
@@ -108,7 +131,7 @@
   text-align: center;
 }
 
-.content-main-header span {
+.content-main-header h2 {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
   font-weight: bold;
@@ -350,5 +373,138 @@ font-family: "Poppins", sans-serif;
 letter-spacing: 0.64px;
 color: #F4F6FC;
 opacity: 1;
+}
+
+.hamburger {
+  position: relative;
+  height: 26px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 99;
+  top: 26px;
+  box-sizing: border-box;
+  display: none;
+  float: right;
+  margin-left: 32px;
+}
+
+
+.bar{
+  background: black;
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  display: block;
+  width: 25px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+
+  .hamburger{
+    display: block;
+  }
+  #toggle{
+    display: none;
+  }
+
+  .logo p, .logo span{
+    font-size: 22px;
+  }
+
+  .navbar{
+    
+    margin-top: 0px;
+  }
+
+  .myslider{
+      margin-top: 0px;
+  }
+
+  .navigationheader  ul{
+    position: relative;
+    display: grid;
+    margin-top: 60px;
+   
+  }
+
+  .card-block {
+    width: 100%;
+  }
+
+  .content-main-header{
+    margin-top: 20px;
+
+  }
+
+  .content-main-header span{
+    font-size: 22px;
+  }
+
+  .timeline{
+     margin-top: 20px;
+  }
+
+  .description {
+    margin-top: 20px;
+}
+
+.footer-link ul li {
+  display: inline-block;
+  padding: 0px 10px;
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+}
+
+.copyright span {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: #F4F6FC;
+}
+
+.social-media-link{
+     float: none;
+     text-align: center;
+     
+
+}
+
+.copyright, .footer{
+  margin-top: 0px;
+}
+
+
+.social-media-link ul{
+  margin: 40px 0px;
+}
+
+.card-section-title span{
+  font-size: 22px;
+}
+
+.card-button button{
+  padding : 15px 115px;
+} 
+
 }
 
